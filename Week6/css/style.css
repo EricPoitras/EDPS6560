@@ -1,0 +1,62 @@
+#external_ex{
+    color: red;
+}
+
+/*Type of CSS selectors */
+span{
+    color: green;
+}
+#selector_2{
+    color: orange;
+}
+.selector_3{
+    color: red;
+}
+
+/* Embedded elements */
+.col div{
+    display: inline-block;
+    margin: 15px;
+    height: 150px;
+    width: 150px;
+    background-color: lightgray;
+}
+
+/* Separating chained selectors for embedded elements */
+div#section_1 .col div.offspring, div#section_2 .col>div.offspring{
+    color: blue;
+}
+
+/*Selecting elements of a certain state*/
+ /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+/*Specificity of CSS selectors*/
+.override_1{ font-size: 150%;}
+.override_1{ font-size: 50%;}
+/* Since the rule at the bottom is closest to the element (read by browser last), it is more spefific, and is therefore applied */ 
+
+#override_2{ font-size: 150%;}
+.override_2{ font-size: 50%;}
+/* Id selector is more specific than class selector */ 
+
+.row #override_3{ font-size: 150%;}
+#override_3{ font-size: 50%;}
+/* Combinations of selectors add to the specificity of a rule */ 
