@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .row div{
+            border: 5px solid white;
+            background-color: lightgray;
+        }
+        #sec_position, #sec_position3 .row{
+            height: 200px;
+        }
+        #sec_position .row, #sec_position2 .row{
+            height: 100%;
+        }
+        #left_img, #right_img, #center_img, #center_img2, #sec_position2 img{
+            height: 50px;
+            width: 50px;
+        }
+    </style>  
+    
+    <title>EDPS 6560 Week 8: Styling Images</title>
+  </head>
+  <body>
+    <!-- Responsive Images -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <img id="fixed_img" src="assets/image-solid.png">
+            </div>
+            <div class="col-3">
+                <img id="resp_img" src="assets/image-solid.png">
+            </div>
+            <div class="col-3">
+                <img id="resp2_img" src="assets/image-solid.svg">
+            </div>
+            <div class="col-3">
+                <img id="resp3_img" class="img-fluid" src="assets/image-solid.svg">
+            </div>
+        </div>  
+    </div>  
+      
+    <!-- Positionning Images -->
+    <div id="sec_position" class="container">
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <img id="left_img" src="assets/image-solid.png">
+            </div>
+            <div class="col-3">
+                <img id="right_img" src="assets/image-solid.png">
+            </div>
+            <div class="col-3">
+                <img id="center_img" src="assets/image-solid.png">
+            </div>
+            <div class="col-3">
+                <img id="center_img2" src="assets/image-solid.png">
+            </div>
+        </div>  
+    </div>
+    
+    <!-- BS4 Positionning Images -->
+    <div id="sec_position2" class="container">
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <img class="float-left" src="assets/image-solid.png">
+            </div>
+            <div class="col-3">
+                <img class="float-right" src="assets/image-solid.png">
+            </div>
+            <div class="col-3 text-center">
+                <img src="assets/image-solid.png">
+            </div>
+            <div class="col-3">
+                <img class="mx-auto d-block" src="assets/image-solid.png">
+            </div>
+        </div>  
+    </div>
+      
+    <!-- Font Awesome Icon Example -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <i id="font_awe" class="fas fa-image"></i>
+            </div>
+        </div>  
+    </div> 
+      
+    <!-- Background Image -->
+    <div id="sec_position3" class="container">
+        <div class="row">
+            <div class="col">
+                <div id="back_pic">
+                    <p>There's a pic in the background!!!</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
