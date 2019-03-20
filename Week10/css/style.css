@@ -26,7 +26,7 @@
     float: right;
 }
 
-#sec_position:nth-child(2){
+#center_img{
     text-align: center;
     /* Set the text-align property of the parent element */
 }
@@ -45,11 +45,8 @@
 /* Background Pic */
 
 #back_pic{
-    height: 100%;
-    
     background-image: url("../assets/image-solid.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-attachment: scroll;
 }
