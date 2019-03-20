@@ -24,13 +24,16 @@
         #sec_position .row, #sec_position2 .row{
             height: 100%;
         }
-        #left_img, #right_img, #center_img, #center_img2, #sec_position2 img{
+        #left_img, #right_img, #center_img img, #center_img2, #sec_position2 img{
             height: 50px;
             width: 50px;
         }
+        #back_pic{
+            height: 100%;
+        }
     </style>  
     
-    <title>EDPS 6560 Week 10: Styling Images</title>
+    <title>EDPS 6560 Week 8: Styling Images</title>
   </head>
   <body>
     <!-- Responsive Images -->
@@ -60,8 +63,8 @@
             <div class="col-3">
                 <img id="right_img" src="assets/image-solid.png">
             </div>
-            <div class="col-3">
-                <img id="center_img" src="assets/image-solid.png">
+            <div id="center_img" class="col-3">
+                <img src="assets/image-solid.png">
             </div>
             <div class="col-3">
                 <img id="center_img2" src="assets/image-solid.png">
@@ -82,7 +85,7 @@
                 <img src="assets/image-solid.png">
             </div>
             <div class="col-3">
-                <img class="mx-auto d-block" src="assets/image-solid.png">
+                <img class="m-auto d-block" src="assets/image-solid.png">
             </div>
         </div>  
     </div>
