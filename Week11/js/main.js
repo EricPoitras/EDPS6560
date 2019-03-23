@@ -1,6 +1,9 @@
 // Elements
 var box1 = document.getElementById("box_1");
 var box2 = document.getElementById("box_2");
+var menu = document.getElementById("icon");
+var dropdown = document.getElementById("dropdown");
+var parent_container = document.getElementById("parent_container");
 
 // Inputs
 var box1_width = document.getElementById("Box1Width");
@@ -23,8 +26,9 @@ var box2_radio2 = document.getElementById("inlineRadio2_Box2");
 var box2_radio3 = document.getElementById("inlineRadio3_Box2");
 var box2_radio4 = document.getElementById("inlineRadio4_Box2");
 
-var menu = document.getElementById("icon");
-var dropdown = document.getElementById("dropdown");
+var parent_radio1 = document.getElementById("inlineRadio1_Par");
+var parent_radio2 = document.getElementById("inlineRadio2_Par");
+var parent_radio3 = document.getElementById("inlineRadio3_Par");
 
 // Event Listeners
 box1_width.addEventListener("keyup", getBox1Width);
@@ -46,6 +50,10 @@ box2_radio1.addEventListener("click", getRadioButtonBox2);
 box2_radio2.addEventListener("click", getRadioButtonBox2);
 box2_radio3.addEventListener("click", getRadioButtonBox2);
 box2_radio4.addEventListener("click", getRadioButtonBox2);
+
+parent_radio1.addEventListener("click", getRadioButtonPar);
+parent_radio2.addEventListener("click", getRadioButtonPar);
+parent_radio3.addEventListener("click", getRadioButtonPar);
 
 menu.addEventListener("click", toggleMenu);
 menu.addEventListener("mouseover", highlightMenu);
@@ -102,6 +110,15 @@ function getRadioButtonBox2(){
         box2.style.display = "inline";
     }else{
         box2.style.display = "none";
+    }
+}
+function getRadioButtonPar(){
+    if(parent_radio1.checked){
+        parent_container.style.textAlign = "left";
+    }else if(parent_radio2.checked){
+        parent_container.style.textAlign = "center";
+    }else{
+        parent_container.style.textAlign = "right";
     }
 }
 

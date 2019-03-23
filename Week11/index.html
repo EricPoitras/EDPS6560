@@ -19,7 +19,7 @@
   <body>
     <div id="playground" class="container-fluid">
         <div class="row">
-            <div class="col">
+            <div id="parent_container" class="col">
                 <h5 style="color: gray;" class="mt-3">CSS Grid Column</h5>
                 <div id="box_1"><span style="background-color: lightgray;border: 1px solid gray;">Box #1</span></div>
                 <div id="box_2"><span style="background-color: lightgray; border: 1px solid gray;">Box #2</span></div>
@@ -32,6 +32,7 @@
             MENU<i class="fas fa-chevron-down"></i>
         </div>
         <div id="dropdown">
+            <h4>CSS Box Model</h4>
             <h5>Box 1</h5>
             <form>
                 <div class="form-group row">
@@ -130,6 +131,21 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4_Box2" value="option4">
                   <label class="form-check-label" for="inlineRadio4_Box2">None</label>
+                </div>
+            </form>
+            <h5 class="mt-3">CSS Grid Column (Parent Element)</h5>
+            <form>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1_Par" value="option1" checked>
+                  <label class="form-check-label" for="inlineRadio1_Par">Left</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2_Par" value="option2">
+                  <label class="form-check-label" for="inlineRadio2_Par">Center</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3_Par" value="option3">
+                  <label class="form-check-label" for="inlineRadio3_Par">Right</label>
                 </div>
             </form>
         </div>
