@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>EDPS 6560 Week 12 Position</title>
+  </head>
+  <body>
+    <div id="playground" class="container-fluid">
+        <div class="row">
+            <div id="parent_container" class="col">
+                <h5 style="color: gray;" class="mt-3">CSS Grid Column</h5>
+                <div id="box_1"><span style="background-color: lightgray;border: 1px solid gray;">Box #1</span></div>
+                <div id="box_2"><span style="background-color: lightgray; border: 1px solid gray;">Box #2</span></div>
+            </div>
+        </div>  
+    </div>
+      
+    <div id="menu">
+        <div id="icon" class="menu_back1">
+            MENU<i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="dropdown">
+            <h4>CSS Box Model</h4>
+            <h5>Box 1</h5>
+            <form>
+                <div class="form-group row">
+                    <label for="Box1Width" class="col-3 col-form-label">Width</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box1Width" placeholder="auto">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Box1Height" class="col-3 col-form-label">Height</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box1Height" placeholder="auto">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Box1Padding" class="col-3 col-form-label">Padding</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box1Padding" placeholder="0px">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Box1Border" class="col-3 col-form-label">Border</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box1Border" placeholder="1px solid black">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Box1Margin" class="col-3 col-form-label">Margin</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box1Margin" placeholder="0px">
+                    </div>
+                </div>
+                <p>Display</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1_Box1" value="option1" checked>
+                  <label class="form-check-label" for="inlineRadio1_Box1">Block</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2_Box1" value="option2">
+                  <label class="form-check-label" for="inlineRadio2_Box1">Inline-Block</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio3_Box1" value="option3">
+                  <label class="form-check-label" for="inlineRadio3_Box1">Inline</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio4_Box1" value="option4">
+                  <label class="form-check-label" for="inlineRadio4_Box1">None</label>
+                </div>
+                <p class="mt-3">Float</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="floatRadio1_Box1" value="option1" checked>
+                  <label class="form-check-label" for="floatRadio1_Box1">None</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="floatRadio2_Box1" value="option2">
+                  <label class="form-check-label" for="floatRadio2_Box1">Left</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="floatRadio3_Box1" value="option3">
+                  <label class="form-check-label" for="floatRadio3_Box1">Right</label>
+                </div>
+            </form>
+            <p class="mt-3">Position</p>
+            <form class="mb-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos1" id="inlineRadio1_Pos1" value="option1" checked>
+                  <label class="form-check-label" for="inlineRadio1_Pos1">Static</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos1" id="inlineRadio2_Pos1" value="option2">
+                  <label class="form-check-label" for="inlineRadio2_Pos1">Absolute</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos1" id="inlineRadio3_Pos1" value="option3">
+                  <label class="form-check-label" for="inlineRadio3_Pos1">Fixed</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos1" id="inlineRadio4_Pos1" value="option4">
+                  <label class="form-check-label" for="inlineRadio4_Pos1">Relative</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos1" id="inlineRadio5_Pos1" value="option4">
+                  <label class="form-check-label" for="inlineRadio5_Pos1">Sticky</label>
+                </div>
+            </form>
+            <div class="form-group row">
+                <label for="Pos1Top" class="col-3 col-form-label">Top</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos1Top" placeholder="0px">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pos1Right" class="col-3 col-form-label">Right</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos1Right" placeholder="0px">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pos1Bottom" class="col-3 col-form-label">Bottom</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos1Bottom" placeholder="0px">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pos1Left" class="col-3 col-form-label">Left</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos1Left" placeholder="0px">
+                </div>
+            </div>
+            <h5 class="mt-3">Box 2</h5>
+            <form>
+                <div class="form-group row">
+                    <label for="Box2Width" class="col-3 col-form-label">Width</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box2Width" placeholder="auto">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Box2Height" class="col-3 col-form-label">Height</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box2Height" placeholder="auto">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Box2Padding" class="col-3 col-form-label">Padding</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box2Padding" placeholder="0px">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Box2Border" class="col-3 col-form-label">Border</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box2Border" placeholder="1px solid black">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Box2Margin" class="col-3 col-form-label">Margin</label>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="Box2Margin" placeholder="0px">
+                    </div>
+                </div>
+                <p>Display</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1_Box2" value="option1" checked>
+                  <label class="form-check-label" for="inlineRadio1_Box2">Block</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2_Box2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2_Box2">Inline-Block</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3_Box2" value="option3">
+                  <label class="form-check-label" for="inlineRadio3_Box2">Inline</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio4_Box2" value="option4">
+                  <label class="form-check-label" for="inlineRadio4_Box2">None</label>
+                </div>
+                <p class="mt-3">Float</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="floatRadio1_Box2" value="option1" checked>
+                  <label class="form-check-label" for="floatRadio1_Box2">None</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="floatRadio2_Box2" value="option2">
+                  <label class="form-check-label" for="floatRadio2_Box2">Left</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="floatRadio3_Box2" value="option3">
+                  <label class="form-check-label" for="floatRadio3_Box2">Right</label>
+                </div>
+            </form>
+            <p class="mt-3">Position</p>
+            <form class="mb-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos2" id="inlineRadio1_Pos2" value="option1" checked>
+                  <label class="form-check-label" for="inlineRadio1_Pos2">Static</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos2" id="inlineRadio2_Pos2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2_Pos2">Absolute</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos2" id="inlineRadio3_Pos2" value="option3">
+                  <label class="form-check-label" for="inlineRadio3_Pos2">Fixed</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos2" id="inlineRadio4_Pos2" value="option4">
+                  <label class="form-check-label" for="inlineRadio4_Pos2">Relative</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos2" id="inlineRadio5_Pos2" value="option4">
+                  <label class="form-check-label" for="inlineRadio5_Pos2">Sticky</label>
+                </div>
+            </form>
+            <div class="form-group row">
+                <label for="Pos2Top" class="col-3 col-form-label">Top</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos2Top" placeholder="0px">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pos2Right" class="col-3 col-form-label">Right</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos2Right" placeholder="0px">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pos2Bottom" class="col-3 col-form-label">Bottom</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos2Bottom" placeholder="0px">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pos2Left" class="col-3 col-form-label">Left</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos2Left" placeholder="0px">
+                </div>
+            </div>
+            <h5 class="mt-3">CSS Grid Column (Parent Element)</h5>
+            <form>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1_Par" value="option1" checked>
+                  <label class="form-check-label" for="inlineRadio1_Par">Left</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2_Par" value="option2">
+                  <label class="form-check-label" for="inlineRadio2_Par">Center</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3_Par" value="option3">
+                  <label class="form-check-label" for="inlineRadio3_Par">Right</label>
+                </div>
+            </form>
+            <p class="mt-3">Position</p>
+            <form class="mb-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos3" id="inlineRadio1_Pos3" value="option1" checked>
+                  <label class="form-check-label" for="inlineRadio1_Pos3">Static</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos3" id="inlineRadio2_Pos3" value="option2">
+                  <label class="form-check-label" for="inlineRadio2_Pos3">Absolute</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos3" id="inlineRadio3_Pos3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3_Pos3">Fixed</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos3" id="inlineRadio4_Pos3" value="option4">
+                  <label class="form-check-label" for="inlineRadio4_Pos3">Relative</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioPos3" id="inlineRadio5_Pos3" value="option4">
+                  <label class="form-check-label" for="inlineRadio5_Pos3">Sticky</label>
+                </div>
+            </form>
+            <div class="form-group row">
+                <label for="Pos3Top" class="col-3 col-form-label">Top</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos3Top" placeholder="0px">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pos3Right" class="col-3 col-form-label">Right</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos3Right" placeholder="0px">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pos3Bottom" class="col-3 col-form-label">Bottom</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos3Bottom" placeholder="0px">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Pos3Left" class="col-3 col-form-label">Left</label>
+                <div class="col-9">
+                  <input type="text" class="form-control" id="Pos3Left" placeholder="0px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

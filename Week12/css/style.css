@@ -1,0 +1,53 @@
+div#playground{
+    height: 200vh;
+    background-color: lightgray;
+}
+#playground .row{
+    height: 100%;
+}
+#playground .col{
+    height: 100%;
+}
+#box_1, #box_2{
+    background-color: white;
+    border: 1px solid black;
+}
+#menu{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    text-align: right;
+}
+#icon i{
+    margin: 1px;
+    padding: 5px;
+}
+#dropdown{
+    border: 1px solid gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 390px;
+}
+#icon{
+    text-align: right;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.menu_back1{
+    background-color: #808080;
+}
+.menu_back2{
+    background-color: #404040;
+}
