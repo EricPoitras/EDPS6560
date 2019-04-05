@@ -1,0 +1,44 @@
+/* Styles */
+
+#css_section1, #css_section2, #bs4_section1, #bs4_section2{
+    height: 22vh;
+    background-color: skyblue;
+    margin: 5px;
+}
+
+#bs4_section1 div, #bs4_section2 div, #css_section1 div, #css_section2 div {
+    background-color: lightgray;
+    border: 1px solid gray;
+    display: block;
+    padding: 8px;
+}
+
+/*
+Direction (Parent)
+flex-direction: column, row, column-reverse, row-reverse
+
+Horizontal alignment (Parent)
+justify-content: center, flex-start, flex-end, space-around, space-between
+
+Vertical alignment (Parent)
+align-items: center, flex-start, flex-end, stretch, baseline
+
+Item alignment (Children)
+align-self: flex-start, flex-end, center
+
+Content alignment (Parent)
+align-content: space-between, space-around, stretch, center, flex-start, flex-end
+*/
+
+#css_section1, #css_section2 {
+    display: flex;
+    /*Enter properties for parent element and values here...*/
+}
+
+#css_section1 div, #css_section2 div{
+    /*Enter properties for children element and values here...*/
+}
+
+#css_section2{
+    flex-direction: column;
+}
