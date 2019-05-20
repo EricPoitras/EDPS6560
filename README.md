@@ -29,3 +29,7 @@ W3 School HTML Reference: https://www.w3schools.com/tags/
 W3 School CSS Reference: https://www.w3schools.com/csSref/
 
 Mozilla Developer Guides: https://developer.mozilla.org/en-US/docs/Web/Guide
+
+# External Resource
+
+Front-End Developer Handbook: https://github.com/FrontendMasters/front-end-handbook-2018
