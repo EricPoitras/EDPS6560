@@ -12,7 +12,7 @@ Sign Up for an account on GitHub: https://github.com/
 
 Sign Up for an account on Codacademy: https://www.codecademy.com/
 
-Install a text editor - I recommend a simple one like Adobe Brackets: http://brackets.io/
+Install a text editor - I recommend a simple one like Adobe Brackets (http://brackets.io/) or a better option - Microsoft Visual Studio Code (https://code.visualstudio.com/)
 
 Install the Adobe Creative Cloud suite of apps - or use the labtops provided in class: https://account.adobe.com
 
@@ -32,4 +32,4 @@ Mozilla Developer Guides: https://developer.mozilla.org/en-US/docs/Web/Guide
 
 # External Resource
 
-Front-End Developer Handbook: https://github.com/FrontendMasters/front-end-handbook-2018
+Front-End Developer Handbook: https://github.com/FrontendMasters/front-end-handbook-2019
