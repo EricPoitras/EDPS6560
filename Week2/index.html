@@ -1,134 +1,87 @@
-<!-- Hi, I'm a comment in HTML - use me to annotate stuff -->
-
-<!-- 
-I can include multiple lines,
-just add a break line, and you've got yourself a paragraph
--->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      
-    <!-- Optional meta tags -->
-    <meta name="keywords" content="HTML Elements and Syntax">
-    <meta name="description" content="EDPS 6560 Week 2: HTML Elements">
-    <meta name="author" content="Eric Poitras">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      
-    <!-- Title of the document appears in the web browser tab window -->
-    <title>EDPS 6560 Week 2: HTML Elements</title>
-      
-  </head>
-  <body>
-        
-<!--
-******************************************************************************************************
-Syntax of HTML Elements
-******************************************************************************************************
--->
-      
-    <!-- Div containers are used to group and select elements and in many ways the most important type of HTML elements, even though they are not visible on the screen! -->
-      
-    <div><!-- Start of container -->
-        <div>   <!-- Start of row -->
-            <div> <!-- Start of column -->
-                
-                <!-- Notice how elements are embedded within each other - hypermedia has a hierarchy, where children elements are embedded within parents, and elements are the same level of the hierarchy are called siblings -->
-                
-                <!-- Most elements have opening and closing tags, e.g. <div> as an opening tag and </div> as closing tag. There are a few exceptions, for instance, <br> and <img>. -->
-                
-                <!-- Elements may also have attributes, for instance a hyperlink has the src attribute that stands for "service et reseaux de communication", a fancy french term for the address of your file. The value of an attribute is defined within quotation marks. For example, the <img src="http://...">--> 
-                                
-<!-- 
-******************************************************************************************************
-Example of Block-Level HTML Elements 
-******************************************************************************************************
--->
-                
-                <!-- Most elements have a default display value, either block or inline. You can view these display properties using the developer tools in Chrome. -->
-                
-                <!-- The following elements are referred to as block-level elements - they take the full width available of the page and start on a new line -->
-                
-                
-                <!-- Headers Level 1 to 6 -->
-                <h1>Header level 1</h1>
-                <h2>Header level 2</h2>
-                <h3>Header level 3</h3>
-                <h4>Header level 4</h4>
-                <h5>Header level 5</h5>
-                <h6>Header level 6</h6>
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
 
-                <!-- Paragraph -->
-                <p>Paragraph</p>
-                
-                <!-- Container -->
-                <div>Example of a div container; add elements in here...</div>
-                
-<!-- 
-******************************************************************************************************
-Example of Inline HTML Elements 
-******************************************************************************************************
--->
-                
-                <!-- The following elements are referred to as inline elements - they take only as much width as needed to display their content and start on the same line -->
-                
-                <!-- Internal vs. External hyperlink -->
-                
-                <a href="http://www.google.com">Internal hyperlink (opens in same tab in browser)</a> <!-- Internal links open the page url address defined in the href attribute in the same tab in the browser -->
-                
-                <br> <!-- Insert a break line since the display property of the element has an inline value. An HTML element with default styling applied to it, other examples are the <em> or <i> to emphasize or italicize text -->
-                
-                <a href="http://www.google.com" target="_blank">External hyperlink (opens in separate tab in browser)</a> <!-- External links open the page in a separate tab in the browser using the target attribute -->
-                
-                <br>
+		<title>EDPS 6560 Spring 2020 - Week 2</title>
+	</head>
 
-                <!-- Images -->
-                
-                <!-- Image hosted by Wikimedia Commons - over 40 million media files with license attribution, see https://commons.wikimedia.org/wiki/Main_Page -->
-                
-                <a title="Dianakc [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Image_placeholder.svg">
-                    
-                    <img width="auto" height="150" alt="Image placeholder" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Image_placeholder.svg/256px-Image_placeholder.svg.png">
-                    <!-- Images have an alernate text that appears if they fail to load, a heigth or width attribute in units of pixel to determine their size, and the src attribute that defines the url address of the file. Using the auto value, you can specify that the image has the same ratio of width to height, while specifying a certain value for either one. -->
-                    
-                </a> 
-                
-                <br>
+	<body>
+		<!-- Welcome to EDPS 6560 Week 2 - 
+            This is an example comment!
+        -->
+		<div id="sec_lan">
+			<h1><strong>Eric Poitras</strong></h1>
+			<h2>Assistant Professor of Instructional Design and Educational Technology currently working at the University of Utah</h2>
+			<h3>UI Design | UX Testing | Web Development | Machine Learning | eLearning</h3>
+			<h4>
+				Creating advanced instructional systems and technologies that leverage data analytics to tailor instruction to the specific needs of different
+				learners
+			</h4>
+			<a href="#sec_abo">About Me</a>
+		</div>
+		<div id="sec_nav">
+			<ul>
+				<li>About Me</li>
+				<li>Experience</li>
+				<li>Education</li>
+				<li>Skills</li>
+				<li>Portfolio</li>
+				<li>Awards</li>
+				<li>Contact Me</li>
+			</ul>
+		</div>
+		<div id="sec_abo">
+			<!-- Start About Me Section -->
+			<h1>About Me</h1>
+			<img src="img/bio.png" alt="Eric Poitras headshot" height="300" width="auto" />
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+			</p>
+		</div>
+		<!-- End About Me Section -->
+		<div id="sec_exp">
+			<!-- Start Experience Section -->
+			<h1>Experience</h1>
+			<h2>Assistant Professor</h2>
+			<h3>Educational Psychology, <br /><span>University of Utah</span></h3>
+			<p>August 2014 - <em>present</em></p>
+			<p class="par_exp">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+			</p>
+		</div>
+		<!-- End Experience Section -->
 
-                <!-- Image hosted in your GitHub Repo -->
-                
-                <a title="Dianakc [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Image_placeholder.svg">
-                    
-                    <img alt="Image placeholder" height="150" width="auto" src="img/Image_placeholder.svg">
-                    <!-- Add an img folder in the directory where your index.html file is located. Upload the image to the folder and specify the file path. -->
-                    
-                </a>
-                
-                <br>
-                
-                <div>Exam<span>ple</span> of a span container, select the content of elements here...</div>
-                
-                <!-- Span containers are inline elements with a similar function to div containers - they just don't take as much space and allow you to group and select the content within elements, rather than multiple elements -->
-
-<!-- 
-******************************************************************************************************
-Consult the W3School Reference on HTML Elements: https://www.w3schools.com/tags/default.asp
-******************************************************************************************************
--->           
-                
-            </div> <!-- End of column -->
-        </div>  <!-- End of row -->
-    </div> <!-- End of container -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
