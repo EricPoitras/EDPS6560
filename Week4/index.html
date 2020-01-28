@@ -1,193 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      
-    <!-- Optional meta tags -->
-    <meta name="keywords" content="HTML Elements and Syntax">
-    <meta name="description" content="EDPS 6560 Week 4: HTML Tables">
-    <meta name="author" content="Eric Poitras">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
-      
-    <!-- Main Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-      
-    <!-- Title of the document appears in the web browser tab window -->
-    <title>EDPS 6560 Week 4: HTML Tables</title>
-        
-    <style>
-        #landing{
-            height: 100vh;
-        }
-        #welcome{
-            height: 66%;
-        }
-        #divider{
-            background-color: #007bff;
-            height: 34%;
-        }
-        #section_html, #section_css, #section_ps, #section_pr, #section_ai{
-            height: 400px;
-            font-size: 2em;
-            background-color: whitesmoke;
-            border-bottom: 1px solid lightgray;
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-    </style>
-  </head>
-  <body>   
-<!-- 
-******************************************************************************************************
-Example of HTML Table in CSS Grid
-******************************************************************************************************
--->
-      <div id="landing" class="container-fluid d-none d-md-block">
-          <div id="welcome" class="row justify-content-center align-items-end">
-              <div class="col-auto">
-                    <center class="signature">
-                        <h1>Eric G. Poitras</h1>
-                        <h5>Digital Portfolio</h5>
-                    </center>
-                    <table>
-                      <tr>
-                        <th>
-                            <h5>HTML</h5>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="W3C [CC BY 3.0 (https://creativecommons.org/licenses/by/3.0)]">
-                        </th>
-                        <th>
-                            <h5>CSS</h5>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Rudloff [CC BY 3.0 (https://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons">
-                        </th>
-                        <th>
-                            <h5>Ps</h5>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Adobe_Photoshop_CS6_icon.svg" alt="Adobe Systems [Public domain], via Wikimedia Commons"></th>
-                        <th>
-                            <h5>Pr</h5>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="Rudloff [CC BY 3.0 (https://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons">
-                        </th>
-                        <th>
-                            <h5>Ai</h5>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Adobe Systems Incorporated [Public domain], via Wikimedia Commons">
-                        </th>
-                      </tr>
-                      <tr>
-                        <td><a class="btn btn-primary" href="#section_html" role="button">Learn More</a></td>
-                        <td><a class="btn btn-primary" href="#section_css" role="button">Learn More</a></td>
-                        <td><a class="btn btn-primary" href="#section_ps" role="button">Learn More</a></td>
-                        <td><a class="btn btn-primary" href="#section_pr" role="button">Learn More</a></td>
-                        <td><a class="btn btn-primary" href="#section_ai" role="button">Learn More</a></td>
-                      </tr>
-                      <tr>
-                        <td>Skill 1</td>
-                        <td>Skill 1</td>
-                        <td>Skill 1</td>
-                        <td>Skill 1</td>
-                        <td>Skill 1</td>
-                      </tr>
-                      <tr>
-                        <td>Skill 2</td>
-                        <td>Skill 2</td>
-                        <td>Skill 2</td>
-                        <td>Skill 2</td>
-                        <td>Skill 2</td>
-                      </tr>
-                      <tr>
-                        <td>Skill 3</td>
-                        <td>Skill 3</td>
-                        <td>Skill 3</td>
-                        <td>Skill 3</td>
-                        <td>Skill 3</td>
-                      </tr>
-                      <tr class="last_row">
-                        <td>Skill 4</td>
-                        <td>Skill 4</td>
-                        <td>Skill 4</td>
-                        <td>Skill 4</td>
-                        <td>Skill 4</td>
-                      </tr>
-                    </table>
-                  </div><!-- End of col -->
-              </div><!-- End of row -->
-              <div id="divider" class="row">
-                  <div class="col">
-                  
-                  </div><!-- End of col -->
-              </div><!-- End of row -->
-        </div><!-- End of container -->
-      
-        <div id="section_html" class="container">
-            <div class="row">
-                <div class="col-sm">
-                    html_col1
-                </div> <!-- End of col -->
-                <div class="col-sm">
-                    html_col2
-                </div> <!-- End of col -->
-            </div> <!-- End of row -->
-        </div> <!-- End of container -->
-      
-        <div id="section_css" class="container">
-            <div class="row">
-                <div class="col-sm">
-                    css_col1
-                </div> <!-- End of col -->
-                <div class="col-sm">
-                    css_col2
-                </div> <!-- End of col -->
-            </div> <!-- End of row -->
-        </div> <!-- End of container -->
-        
-        <div id="section_ps" class="container">
-            <div class="row">
-                <div class="col-sm">
-                    ps_col1
-                </div> <!-- End of col -->
-                <div class="col-sm">
-                    ps_col2
-                </div> <!-- End of col -->
-            </div> <!-- End of row -->
-        </div> <!-- End of container -->
-      
-        <div id="section_pr" class="container">
-            <div class="row">
-                <div class="col-sm">
-                    pr_col1
-                </div> <!-- End of col -->
-                <div class="col-sm">
-                    pr_col2
-                </div> <!-- End of col -->
-            </div> <!-- End of row -->
-        </div> <!-- End of container -->
-      
-        <div id="section_ai" class="container">
-            <div class="row">
-                <div class="col-sm">
-                    ai_col1
-                </div> <!-- End of col -->
-                <div class="col-sm">
-                    ai_col2
-                </div> <!-- End of col -->
-            </div> <!-- End of row -->
-        </div> <!-- End of container -->
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
 
-<!-- 
-******************************************************************************************************
-Consult the W3School Reference on HTML Elements: https://www.w3schools.com/tags/default.asp
-******************************************************************************************************
---> 
-            
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+		<title>EDPS 6560 Spring 2020 - Week 4</title>
+	</head>
+
+	<body>
+		<!-- Welcome to EDPS 6560 Week 4 - 
+            This is an example comment!
+        -->
+		<div id="sec_lan" class="container-fluid" style="height: 100vh;">
+			<div class="row justify-content-between">
+				<div class="col-auto">
+					<h1><strong>Eric Poitras</strong></h1>
+				</div>
+				<div class="col-auto">
+					<a href="contact.html"><i class="fas fa-envelope"></i> Contact Me</a>
+				</div>
+			</div>
+			<div class="row justify-content-center align-items-center" style="height: 70vh;">
+				<div class="col-6">
+					<h2>Assistant Professor of Instructional Design and Educational Technology currently working at the University of Utah</h2>
+					<h3>UI Design | UX Testing | Web Development | Machine Learning | eLearning</h3>
+				</div>
+				<div class="col-4">
+					<img src="img/browser-3614768_1280.png" width="100%" height="auto" alt="Image by janjf93 from Pixabay" />
+					<!--Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3614768">janjf93</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3614768">Pixabay</a>-->
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<a href="#">
+						<span>Scroll Down</span><br />
+						<i class="fas fa-chevron-circle-down"></i>
+					</a>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<h4>
+						Creating advanced instructional systems and technologies that leverage data analytics to tailor instruction to the specific needs of
+						different learners
+					</h4>
+					<a class="btn btn-lg btn-primary rounded-pill" role="button" href="#sec_abo">Learn More</a>
+				</div>
+			</div>
+		</div>
+		<nav id="sec_nav">
+			<ul>
+				<li>About Me</li>
+				<li>Experience</li>
+				<li>Education</li>
+				<li>Skills</li>
+				<li><a href="projects/1.html">Portfolio</a></li>
+				<li>Awards</li>
+				<li><a href="contact.html" target="_blank">Contact Me</a></li>
+				<li><a class="btn btn-primary rounded-pill" href="contact.html" role="button" target="_blank">Contact Me</a></li>
+			</ul>
+		</nav>
+		<div id="sec_abo">
+			<!-- Start About Me Section -->
+			<h1>About Me</h1>
+			<img src="img/bio.png" alt="Eric Poitras headshot" height="300" width="auto" />
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+			</p>
+		</div>
+		<!-- End About Me Section -->
+		<div id="sec_exp">
+			<!-- Start Experience Section -->
+			<h1>Experience</h1>
+			<h2>Assistant Professor</h2>
+			<h3>Educational Psychology, <br /><span>University of Utah</span></h3>
+			<p>August 2014 - <em>present</em></p>
+			<p class="par_exp">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+			</p>
+		</div>
+		<!-- End Experience Section -->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
