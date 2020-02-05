@@ -1,127 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      
-    <!-- Optional meta tags -->
-    <meta name="keywords" content="HTML Elements and Syntax">
-    <meta name="description" content="EDPS 6560 Week 5: CSS Grids">
-    <meta name="author" content="Eric Poitras">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans" rel="stylesheet">
-      
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      
-    <!-- Main Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-      
-    <!-- Title of the document appears in the web browser tab window -->
-    <title>EDPS 6560 Week 5: CSS Grids</title>
-        
-    <style>
-        #landing{
-            font-family: 'Berkshire Swash', cursive;
-        }
-        #aboutme{
-            font-family: 'Open Sans', sans-serif;
-        }
-        .row{
-            height: 100%;
-            color: white;
-        }
-        .card_cus{
-            background-color: #000000E6; 
-            text-align: center; 
-            padding: 25px; 
-            font-size: 150%; 
-        }
-        button{
-            font-size: 125%;
-            font-family: 'Open Sans', sans-serif;
-            width: 100px;
-        }
-        i{
-            margin-left: 5px;
-            margin-right: 5px;
-            margin-top: 15px;
-        }
-    </style>
-  </head>
-  <body>   
-<!-- 
-******************************************************************************************************
-Example of CSS Grid in Web Apps
-******************************************************************************************************
--->
-  <nav class="fixed-top d-none d-sm-block">
-      <button id="btn_1" type="button" class="btn btn-outline-light float-right mt-3 mr-3">Credits</button>
-      <button id="btn_2" type="button" class="btn btn-outline-light float-right mt-3 mr-1">Quote</button>
-  </nav>
-  
-  <div id="web_app" class="container-fluid">
-      
-      <!-- Login section -->
-      <div id="landing" class="row justify-content-center align-items-center">
-          <div class="col-md-6">
-              <div class="card_cus">
-                    <h3><i class="fas fa-quote-left"></i> <span style="font-size: 200%;">Q</span>uote of the Day <i class="fas fa-quote-right"></i></h3>
-                    <p class="mb-0">What is this? A center for ants? The building has to be at least three times bigger than this!</p>
-                    <footer class="blockquote-footer">Derek in <cite title="Source Title">Zoolander</cite></footer>
-              </div>
-          </div><!-- End of col -->
-      </div><!-- End of row -->
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
 
-      <!-- About Me section -->
-      <div id="aboutme" class="d-none row justify-content-center align-items-center">
-          <div class="col-auto text-center">
-              <div class="card_cus">
-                <h1>Eric G. Poitras</h1>
-                <h4>Zoolander Enthusiast</h4>
-              </div>
-          </div><!-- End of col -->
-      </div><!-- End of row -->
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 
-  </div><!-- End of container -->
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat|Roboto&display=swap" rel="stylesheet" />
 
-<!-- 
-******************************************************************************************************
-Consult the W3School Reference on HTML Elements: https://www.w3schools.com/tags/default.asp
-******************************************************************************************************
---> 
-            
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      
-    <script>
-      var btn_1 = document.getElementById("btn_1");
-      console.log(btn_1);
-      var btn_2 = document.getElementById("btn_2");
-      console.log(btn_2);
-        
-      btn_1.addEventListener("click", function(){
-         console.log("btn_1 click event..."); 
-         document.getElementById("landing").classList.add("d-none");
-         document.getElementById("aboutme").classList.remove("d-none");
-         console.log("toggled display of the view");
-      });
-    
-      btn_2.addEventListener("click", function(){
-         console.log("btn_2 click event..."); 
-         document.getElementById("landing").classList.remove("d-none");
-         document.getElementById("aboutme").classList.add("d-none");
-         console.log("toggled display of the view");
-      });
-    </script>
-      
-  </body>
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<style>
+			/* Hi, I'm an internal stylesheet, and I usually appear within the header section following the external stylesheets listed above. */
+			#sec_lan {
+				height: 200vh;
+			}
+		</style>
+
+		<title>EDPS 6560 Spring 2020 - Week 5</title>
+	</head>
+
+	<body>
+		<!-- Welcome to EDPS 6560 Week 5 - 
+            This is an example comment!
+        -->
+		<div id="sec_lan" class="container-fluid" style="height: 200vh;">
+			<div id="sec_lan_header" class="row justify-content-between" style="height: 15vh;">
+				<div class="col-auto">
+					<h1><strong>Eric Poitras</strong></h1>
+				</div>
+				<div class="col-auto">
+					<a href="contact.html"><i class="fas fa-envelope"></i> Contact Me</a>
+				</div>
+			</div>
+			<div id="sec_lan_sec1" class="row justify-content-around align-items-center" style="height: 85vh;">
+				<div class="col-4">
+					<h2>Assistant Professor of Instructional Design and Educational Technology currently working at the University of Utah</h2>
+					<h3>UI Design | UX Testing | Web Development | Machine Learning | eLearning</h3>
+					<a href="#sec_lan_sec2">
+						<span>Scroll Down</span><br />
+						<i class="fas fa-chevron-circle-down"></i>
+					</a>
+				</div>
+				<div class="col-5">
+					<img src="img/browser-3614768_1280.png" width="100%" height="auto" alt="Image by janjf93 from Pixabay" />
+					<!--Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3614768">janjf93</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3614768">Pixabay</a>-->
+				</div>
+			</div>
+			<div id="sec_lan_sec2" class="row justify-content-around" style="height: 100vh;">
+				<div class="col-4 offset-1 align-self-center">
+					<h4>
+						Creating advanced instructional systems and technologies that leverage data analytics to tailor instruction to the specific needs of
+						different learners
+					</h4>
+					<a class="btn btn-lg btn-primary rounded-pill" role="button" href="#sec_abo">Learn More</a>
+				</div>
+			</div>
+		</div>
+		<nav id="sec_nav">
+			<ul>
+				<li>About Me</li>
+				<li>Experience</li>
+				<li>Education</li>
+				<li>Skills</li>
+				<li><a href="projects/1.html">Portfolio</a></li>
+				<li>Awards</li>
+				<li><a href="contact.html" target="_blank">Contact Me</a></li>
+				<li><a class="btn btn-primary rounded-pill" href="contact.html" role="button" target="_blank">Contact Me</a></li>
+			</ul>
+		</nav>
+		<div id="sec_abo">
+			<!-- Start About Me Section -->
+			<h1>About Me</h1>
+			<img src="img/bio.png" alt="Eric Poitras headshot" height="300" width="auto" />
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+			</p>
+		</div>
+		<!-- End About Me Section -->
+		<div id="sec_exp">
+			<!-- Start Experience Section -->
+			<h1>Experience</h1>
+			<h2>Assistant Professor</h2>
+			<h3>Educational Psychology, <br /><span>University of Utah</span></h3>
+			<p>August 2014 - <em>present</em></p>
+			<p class="par_exp">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+			</p>
+		</div>
+		<!-- End Experience Section -->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
