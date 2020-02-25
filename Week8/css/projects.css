@@ -1,0 +1,247 @@
+/* CSS Reference from W3School: https://www.w3schools.com/cssref/ */
+
+:root {
+	/* Fonts */
+	--main-font-primary: "Roboto", sans-serif;
+	--main-font-secondary: "Montserrat", sans-serif;
+	--main-font-tertiary: "Comfortaa", cursive;
+	/* Colors */
+	--main-color-gray: #485359;
+	--main-color-white: #e9f0f2;
+	--main-color-black: #0d0d0d;
+	--main-color-light: #5ef2ad;
+	--main-color-dark: #45735d;
+	--main-color-light2: #f38888;
+	--main-color-dark2: #d27575;
+	--main-color-light3: #a0d3f2;
+	--main-color-dark3: #769bb3;
+	--main-color-light4: #faa3d3;
+	--main-color-dark4: #b3397c;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Font and color properties for small devices and up */
+html {
+	font-size: 80%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--main-font-primary);
+	color: var(--main-color-black);
+	line-height: 125%;
+}
+
+p {
+	font-family: var(--main-font-secondary);
+	color: var(--main-color-black);
+}
+
+.text_highlight {
+	font-family: var(--main-font-tertiary);
+	color: var(--main-color-light4);
+	text-align: left;
+	font-size: 125%;
+}
+
+/* Layout of the landing page on small devices */
+#sec_pro {
+	height: 200vh;
+	background-color: var(--main-color-white);
+	background-image: url("../img/project_1_background1.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#sec_pro_header {
+	height: 15vh;
+}
+#sec_pro_fig {
+	height: 50vh;
+}
+#sec_pro_inf {
+	height: 135vh;
+	background-image: url("../img/project_1_background2.svg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+}
+
+/* unvisited link */
+#sec_pro a:link {
+	color: var(--main-color-light2);
+}
+
+/* visited link */
+#sec_pro a:visited {
+	color: var(--main-color-light2);
+}
+
+/* mouse over link */
+#sec_pro a:hover {
+	color: var(--main-color-dark2);
+}
+
+/* selected link */
+#sec_pro a:active {
+	color: var(--main-color-dark2);
+}
+
+/* Size of system icon buttons */
+#sec_pro a i {
+	font-size: 20px;
+}
+
+#sec_pro a span {
+	font-size: 20px;
+}
+
+#sec_pro_fig img {
+	width: 90%;
+	height: auto;
+	max-width: 350px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	/* Size of system icon - smaller due to decreased height of screen */
+	#sec_pro {
+		height: 200vh;
+		background-color: var(--main-color-white);
+		background-image: url("../img/project_1_background3.svg");
+		background-size: 100%;
+	}
+	#sec_pro_header {
+		height: 15vh;
+	}
+	#sec_pro_fig {
+		height: 85vh;
+	}
+	#sec_pro_inf {
+		height: 100vh;
+		background-image: none;
+		align-items: flex-end;
+	}
+	#sec_pro_inf .col {
+		padding: 3rem;
+	}
+	#sec_pro_fig img {
+		width: 90%;
+		height: auto;
+		max-width: 400px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	html {
+		font-size: 100%;
+	}
+	#sec_pro {
+		height: 200vh;
+		background-color: var(--main-color-white);
+		background-image: url("../img/project_1_background1.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	#sec_pro_header {
+		height: 10vh;
+	}
+	#sec_pro_fig {
+		height: 75vh;
+	}
+	#sec_pro_inf {
+		height: 115vh;
+		background-image: url("../img/project_1_background2.svg");
+		background-repeat: no-repeat;
+		background-position-y: bottom;
+		background-position-x: center;
+		background-size: 100%;
+		align-items: flex-start;
+	}
+	#sec_pro_fig img {
+		width: 90%;
+		height: auto;
+		max-width: none;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	html {
+		font-size: 100%;
+	}
+	/* Font size - increase size of system icon buttons */
+	#sec_pro a i {
+		font-size: 40px;
+	}
+	#sec_pro a span {
+		font-size: 125%;
+	}
+	#sec_pro {
+		height: 200vh;
+		background-color: var(--main-color-white);
+		background-image: url("../img/project_1_background4.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	#sec_pro_header {
+		height: 10vh;
+	}
+	#sec_pro_fig {
+		height: 70vh;
+	}
+	#sec_pro_inf {
+		height: 120vh;
+		background-image: url("../img/project_1_background5.svg");
+		background-repeat: no-repeat;
+		background-position-y: bottom;
+		background-position-x: center;
+		background-size: 100%;
+		align-items: center;
+	}
+	#sec_pro_fig img {
+		width: 90%;
+		height: auto;
+		max-width: none;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	html {
+		font-size: 125%;
+	}
+	#sec_pro {
+		height: 200vh;
+		background-color: var(--main-color-white);
+		background-image: url("../img/project_1_background6.svg");
+		background-repeat: no-repeat;
+		background-size: 105%;
+	}
+	#sec_pro_header {
+		height: 10vh;
+	}
+	#sec_pro_fig {
+		height: 70vh;
+	}
+	#sec_pro_inf {
+		height: 120vh;
+		background-image: url("../img/project_1_background5.svg");
+		background-repeat: no-repeat;
+		background-position-y: bottom;
+		background-position-x: center;
+		background-size: 100%;
+		align-items: center;
+	}
+	#sec_pro_fig img {
+		width: 65%;
+		height: auto;
+		max-width: 1200px;
+	}
+}
